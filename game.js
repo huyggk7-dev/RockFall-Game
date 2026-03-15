@@ -90,7 +90,7 @@ const IMAGE_SOURCES = {
     ground: 'Asset/Ground.png', 
 
     // Ảnh UI khác 
-    game_over_ui: 'Asset/GameOverUI.png',
+    game_over_ui: 'Asset/GameOverGUI.png',
 };
 
 // Config Đá rời
