@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FallDanger - Beta v1.1 </title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+    <style>
+        /* CSS thuần thay thế */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ecf0f1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 20px;
+        }
+        h1 {
+            font-size: 25px; 
+            font-weight: 800;
+            color: #1f2937; 
+            margin-bottom: 10px; 
+        }
+        #gameCanvas {
+            border: 5px solid #2c3e50; /* Viền đậm */
+            background-color: #c9fdff; /* Nền canvas */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+            border-radius: 12px; /* Bo góc */
+            touch-action: none; /* Ngăn cuộn trên thiết bị cảm ứng */
+        }
+        .info-message {
+            text-align: center;
+            margin-top: 30px; 
+            font-size: 18px; 
+            font-weight: 600; 
+            color: #374151; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="header-title"> </h1>
+    
+    <!-- Canvas là nơi trò chơi được vẽ -->
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+
+    <div class="info-message">
+        Sử dụng phím mũi tên ← và → hoặc A và D để di chuyển.
+        <br> Mũi tên ↑ hoặc phím cách để nhảy.
+        <br> Tránh các tảng đá rơi và đạt điểm cao nhất có thể!
+    </div>
+
+    <!-- Liên kết đến tệp JavaScript logic -->
+    <script src="game.js"></script> 
+</body>
+</html>
