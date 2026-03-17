@@ -335,8 +335,7 @@ function updateRocks() {
             }
         }
         // Kiểm tra va chạm (Tạm thời chưa xử lý va chạm với player)
-        if (checkCollision(player, rock)) {
-            //player.state = 'game_over';
+        if (checkCollision(player, rock) && rock.y + rock.height < player.y + player.height/1.5) { 
             alive = false;
         }
 
